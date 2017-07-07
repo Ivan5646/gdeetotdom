@@ -5,6 +5,7 @@ var minify = require('gulp-minify'); // minify js
 var watch = require('gulp-watch');
 var connect = require('gulp-connect');
 var less = require('gulp-less');
+var autoprefixer = require('gulp-autoprefixer');
 
 gulp.task('connect', function() { // ok
   connect.server({
@@ -16,6 +17,10 @@ gulp.task('connect', function() { // ok
 gulp.task('app-styles', function() { // ok
   return gulp.src("src/styles/**/*.less")
     .pipe(less())
+    .pipe(autoprefixer({
+      browsers: ['last 2 versions'],
+      cascade: false
+    }))
     .pipe(uglifycss())
     .pipe(gulp.dest("build/styles"))
     .pipe(connect.reload());

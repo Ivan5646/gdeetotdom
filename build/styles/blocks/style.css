@@ -1,1 +1,1 @@
-h2{color:red;font-weight:bold;background-image:none;font-size:28pt}
+h2{color:red;font-weight:bold;background-image:none;font-size:28pt;background:-webkit-gradient(linear,left top,left bottom,from(red),to(yellow));background:linear-gradient(red,yellow)}
