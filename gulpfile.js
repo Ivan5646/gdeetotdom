@@ -17,7 +17,7 @@ gulp.task('connect', function() {
 gulp.task('app-styles', function() {
   return gulp.src("src/styles/**/*.less")
     .pipe(less())
-    // .pipe(uglifycss())
+    .pipe(uglifycss())
     .pipe(gulp.dest("build/styles"));
     // .pipe(connect.reload());
 });
