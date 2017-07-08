@@ -1,12 +1,16 @@
 .top-promotion {
-  .top-promotion__nav {
-    display: flex;
-    color: #0072be;
-    .top-promotion_new-built {
-      margin-right: 6px;
-    }
-  }
   .top-promotion__header {
-    font-size: 24px;
-  }
+    display: flex;
+     // flex-wrap: wrap;
+    > p:first-child {
+      font-size: 24px;
+      flex: 1 0 50%;
+    }
+    .top-promotion__counter {
+      flex: 1 0 50%;
+    }
+    .top-promotion__expired {
+      flex: 0 1 100%;
+    }
+  } // .top-promotion__header
 }
