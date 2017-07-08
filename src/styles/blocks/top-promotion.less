@@ -1,16 +1,28 @@
 .top-promotion {
   .top-promotion__header {
     display: flex;
-     // flex-wrap: wrap;
-    > p:first-child {
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    .top-promotion__top {
       font-size: 24px;
-      flex: 1 0 50%;
+      // flex: 1 0 50%;
+      width: 70%;
     }
     .top-promotion__counter {
-      flex: 1 0 50%;
+      // flex: 1 0 50%;
+      width: 30%;
+      text-align: center;
     }
     .top-promotion__expired {
-      flex: 0 1 100%;
+      // flex: 0 1 100%;
+      width: 50%;
     }
   } // .top-promotion__header
+  .top-promotion__bottom {
+    display: flex;
+    .top-promotion__img-content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }
