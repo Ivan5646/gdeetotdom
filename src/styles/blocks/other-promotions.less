@@ -2,7 +2,7 @@
   .other-promotions__wrapper {
     display: flex;
   }
-  h3 {
+  > h3 {
     display: block;
   }
   .other-promotions__promotion {
@@ -16,10 +16,19 @@
       margin-bottom: 20px;
     }
     h3 {
-      margin: 0 auto;
+      // margin: 0 auto;
     }
     .other-promotions__content {
-
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      h4 {
+        width: 93%;
+        margin-left: 4%;
+      }
+      > p {
+        margin-left: 4%;
+      }
     }
     .other-promotions__expired {
       width: 40%;
