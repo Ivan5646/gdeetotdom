@@ -12,6 +12,19 @@
     li {
       margin-right: 20px;
     }
+    li:last-child {
+      .header-content__absolute {
+        background-image: url("../../img/Absolut-Logo.svg");
+        width: 100px;
+        height: 20px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center; 
+        &:hover {
+          background-image: url("../../img/Absolut-Logo-Blue.svg");
+        }
+      }
+    }
     a {
       text-decoration: none;
       color: #fff; 
