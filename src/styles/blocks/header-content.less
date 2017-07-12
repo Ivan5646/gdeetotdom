@@ -11,6 +11,7 @@
     align-items: center;
     li {
       margin-right: 20px;
+      // height: 32px;
     }
     li:last-child {
       .header-content__absolute {
@@ -32,16 +33,25 @@
       }
     }
     .header-content__specials {
-      div {
-        display: inline-block;
-        width: 17px;
-        height: 22px;
-        background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") no-repeat;
-        // background-size: 20px;
-        background-position: 0px -111px;
-        margin-right: 5px;
-      }
-
+      // background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") no-repeat;
+      // background-size: 100px;
+      // background-position: 0px -138px;
+      margin-left: 20px;
+      a {
+        span {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: -20px;
+            // width: 20px;
+            // height: 20px;
+            background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") 2px -113px no-repeat;
+            padding: 24px 34px 0 0;
+          }
+        }
+      }  
     }
     a {
       text-decoration: none;
