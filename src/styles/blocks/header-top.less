@@ -15,6 +15,18 @@
     a {
       text-decoration: none;
       color: #b9b9c3; 
+      span {
+        position: relative;
+      }
+      .header-top__ad::before {
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: -22px;
+        background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -46px 1px no-repeat;
+        width: 20px;
+        height: 20px; // or use padding instead of width ad height
+      }
     }
     a:hover{
       color: #fff;
