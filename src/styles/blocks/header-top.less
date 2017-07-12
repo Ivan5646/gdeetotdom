@@ -27,37 +27,64 @@
   .header-top__user {
     li {
       margin-right: 30px;
-    }
-    a {
-      span {
-        position: relative;
-        &::before {
-          content: "";
-          position: absolute
+      a {
+        span {
+          position: relative;
+          &::before {
+            content: "";
+            position: absolute;
+          }
+        }
+      } // a
+      .header-top__ad { // a tag
+        // position: relative;
+        span::before {
+          // content: "";
+          // position: absolute;
+          top: 0px;
+          left: -22px;
+          background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -46px 1px no-repeat;
+          width: 20px;
+          height: 16px; // or use padding instead of width ad height
         }
       }
-      .header-top__ad::before {
-        top: 0px;
-        left: -22px;
-        background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -46px 1px no-repeat;
-        width: 20px;
-        height: 16px; // or use padding instead of width ad height
-      }
-      .header-top__register::before {
-        top: 0px;
-        left: -17px;
-        background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -67px no-repeat;
-        width: 16px;
-        height: 16px; // or use padding instead of width ad height
-      }
-      .header-top__login::before {
-        top: 0px;
-        left: -17px;
-        background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -33px no-repeat;
-        width: 16px;
-        height: 16px; // or use padding instead of width ad height
-      }
-    }
+    } // li
+    
   } // .header-top__user
+
+      // span {
+      //   position: relative;
+      //   &::before {
+      //     content: "";
+      //     position: absolute
+      //   }
+      // }
+      // .header-top__ad::before {
+      //   top: 0px;
+      //   left: -22px;
+      //   background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -46px 1px no-repeat;
+      //   width: 20px;
+      //   height: 16px; // or use padding instead of width ad height
+      //   &:hover {
+      //     // color: #fff;
+      //     background-color: red;
+      //   }
+      // }
+      // .header-top__register::before {
+      //   top: 0px;
+      //   left: -17px;
+      //   background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -67px no-repeat;
+      //   width: 16px;
+      //   height: 16px; // or use padding instead of width ad height
+      // }
+      // .header-top__login::before {
+      //   top: 0px;
+      //   left: -17px;
+      //   background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -33px no-repeat;
+      //   width: 16px;
+      //   height: 16px; // or use padding instead of width ad height
+      // }
+  //   } // a
+  // } // .header-top__user
 
 }
