@@ -22,9 +22,10 @@
     }
   } // ul
   .header-top__regions {
-    margin-left: 40px;
+    margin-left: 40px;  // centering uls 40px from both sides
   }
   .header-top__user {
+    margin-right: 40px; // centering uls 40px from both sides
     li {
       // margin-right: 30px;
       padding-right: 28px;
@@ -80,5 +81,9 @@
         }
       }
     } // li
+    li:last-child {
+      padding-right: 0;
+      margin-right: 0;
+    }
   } // .header-top__user
 }
