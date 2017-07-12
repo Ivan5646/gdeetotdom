@@ -76,9 +76,14 @@
         span::before {
           top: 0px;
           left: -17px;
-          background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") -1px -33px no-repeat;
+          background: url("http://static.gdeetotdom.ru/skin/ged6/img/ico/header-icons.png") 0px -33px no-repeat;
           width: 16px;
           height: 16px; // or use padding instead of width ad height
+        }
+        &:hover {
+          span::before {
+            background-position: -17px -33px;
+          }
         }
       }
     } // li
