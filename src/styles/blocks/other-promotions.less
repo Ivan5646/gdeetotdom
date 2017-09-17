@@ -5,10 +5,12 @@
   .other-promotions__wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     .other-promotions__promotion {
       flex-basis: 30%;
       border: 2px solid #cccccc;
-      margin: 0 3% 2% 0; // rihyt 3.2% 32px
+      //margin: 0 3% 2% 0; // rihyt 3.2% 32px
+      margin-bottom: 2%;
       &:hover {
         cursor: pointer;
         box-shadow: 0px 3px 5px #cccccc;
@@ -55,7 +57,7 @@
       }
     } // .other-promotions__promotion
     .other-promotions__promotion:nth-child(3n) {
-      margin-right: 0;
+      //margin-right: 0;
     }
   } // .other-promotions__wrapper
 }
